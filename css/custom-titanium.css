@@ -244,3 +244,70 @@ header .navbar .dropdown-menu a {
   .site-titanium-footer .social-icons a{ width:32px; height:32px; font-size:16px; }
 }
 
+
+/* Force header/navbar to be black with white text on mobile and small tablets */
+@media (max-width: 991px) {
+  header, header.header-with-topbar {
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  /* Collapsed mobile menu background */
+  .navbar-collapse,
+  .navbar-collapse.collapse {
+    background: #000 !important;
+  }
+
+  /* Dropdown menu (mobile) */
+  .navbar .dropdown-menu {
+    background: #000 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Nav links, brand and toggler lines */
+  header .navbar .navbar-nav .nav-link,
+  header .navbar .navbar-nav .nav-item a,
+  header .navbar .navbar-brand,
+  header .navbar .navbar-brand img,
+  .navbar-toggler,
+  .navbar-toggler .navbar-toggler-line {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+
+  /* Ensure anchor text inside dropdown and collapsed menu is white */
+  .navbar .dropdown-menu a,
+  .navbar-collapse .nav-link,
+  .navbar-collapse .nav-item a {
+    color: #ffffff !important;
+  }
+
+  /* If there are any icons inside nav (fontawesome, svg), make them white */
+  header .navbar .fa,
+  header .navbar i,
+  header .navbar svg {
+    fill: #ffffff !important;
+  }
+
+  /* Ensure the header top-bar also stays black */
+  .header-top-bar, .top-bar-black, .bg-black {
+    background-color: #000 !important;
+    background: #000 !important;
+    color: #fff !important;
+  }
+
+  /* Buttons inside header: make text white and keep background visible */
+  header .header-button a,
+  header .header-button a .btn-base-color {
+    color: #ffffff !important;
+  }
+}
+
+/* Hide the phone number text inside the contact bubble on mobile to save space */
+@media (max-width: 991px) {
+  .contact-bubble span {
+    display: none !important;
+  }
+}
