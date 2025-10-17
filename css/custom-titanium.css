@@ -266,17 +266,6 @@ header .navbar .dropdown-menu a {
     box-shadow: none !important;
   }
 
-  /* Nav links, brand and toggler lines */
-  header .navbar .navbar-nav .nav-link,
-  header .navbar .navbar-nav .nav-item a,
-  header .navbar .navbar-brand,
-  header .navbar .navbar-brand img,
-  .navbar-toggler,
-  .navbar-toggler .navbar-toggler-line {
-    color: #ffffff !important;
-    fill: #ffffff !important;
-  }
-
   /* Ensure anchor text inside dropdown and collapsed menu is white */
   .navbar .dropdown-menu a,
   .navbar-collapse .nav-link,
