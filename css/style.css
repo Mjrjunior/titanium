@@ -7142,7 +7142,8 @@ header .navbar-brand {
 header .navbar-brand .default-logo {
   visibility: visible;
   opacity: 1;
-  width: auto;
+  max-width: 190px;
+  height: auto;
 }
 header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   visibility: hidden;
@@ -7150,7 +7151,9 @@ header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   width: 0;
 }
 header .navbar-brand img {
-  max-height: 46px;
+  width: auto;
+  height: auto;
+  max-width: 190px;
 }
 header .header-top-bar {
   position: fixed;
@@ -10063,15 +10066,15 @@ blockquote footer {
 }
 .btn.btn-rounded.btn-rounded {
   -webkit-border-radius: 50px;
-  border-radius: 50px;
+  border-radius: 0;
 }
 .btn.btn-round-edge {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .btn.btn-round-edge-small {
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 .btn.btn-link {
   padding: 0 0 2px;

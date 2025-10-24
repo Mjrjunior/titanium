@@ -18,7 +18,7 @@
   background-color: #efefef;
   width: 100%;
   aspect-ratio: 1 / 1; /* mantém quadrado */
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   overflow: hidden;
   display: block;
@@ -87,7 +87,7 @@
   background:#000;
   color:#fff;
   padding:12px 20px;
-  border-radius:4px;
+  border-radius:0;
   font-weight:700;
   display:inline-block;
   text-decoration:none;
@@ -99,7 +99,7 @@
   background:#eecb00;
   color:#000;
   padding:12px 16px;
-  border-radius:50px;
+  border-radius:25px;
   font-weight:700;
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
   text-decoration:none;
@@ -158,6 +158,50 @@ header .navbar .dropdown-menu a {
   color: #ffffff !important;
 }
 
+/* Header Social Media Icons */
+.header-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-social-icons .social-icon-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #eecb00 !important;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.header-social-icons .social-icon-header:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* Ensure social icons are visible on all header states */
+header .header-social-icons .social-icon-header i {
+  color: #eecb00 !important;
+}
+
+header .header-social-icons .social-icon-header:hover i {
+  color: #ffffff !important;
+}
+
+/* Header Button - Fale Conosco */
+.header-button .btn {
+  width: 154px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
 /* Cases de Sucesso section */
 
 .cases-section { padding: 80px 0 70px; color: #fff; position: relative; overflow: hidden; }
@@ -181,6 +225,46 @@ header .navbar .dropdown-menu a {
 }
 .cases-section[data-bg]::before { background: rgba(0,0,0,0.55); }
 
+/* Parceiros Section */
+.parceiros-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.parceiros-title {
+  color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  letter-spacing: 0.3px;
+}
+
+.parceiros-subtitle {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Produtos Section */
+.produtos-section {
+  padding: 80px 0;
+  background: #eecb00;
+}
+
+.produtos-title {
+  color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  letter-spacing: 0.3px;
+}
+
+.produtos-subtitle {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
 /* Footer (Titanium style) */
 .site-titanium-footer{ background:#000; color:#fff; position:relative; padding-top:36px; }
 .site-titanium-footer::before{
@@ -191,7 +275,13 @@ header .navbar .dropdown-menu a {
   height:18px;
   background:#eecb00;
 }
-.site-titanium-footer .footer-logo img{ max-width:200px; }
+.site-titanium-footer .footer-logo img{ 
+  width: 232.23px !important; 
+  height: 99.75px !important; 
+  max-width: 232.23px !important;
+  max-height: 99.75px !important;
+  object-fit: contain;
+}
 .site-titanium-footer .footer-address p{ color:#fff; opacity:0.95; }
 .site-titanium-footer .footer-links{ list-style:none; padding:0; margin:0; }
 .site-titanium-footer .footer-links li{ margin:8px 0; }
@@ -208,7 +298,7 @@ header .navbar .dropdown-menu a {
   color:inherit;
   text-decoration:none; /* remove underline */
   background:transparent;
-  border-radius:6px;
+  border-radius:0;
 }
 .site-titanium-footer .social-icons a:hover{ text-decoration:none; color:#fff; }
 /* make the icon circular and separate from text so the label stays on the same line */
@@ -291,6 +381,171 @@ header .navbar .dropdown-menu a {
   header .header-button a,
   header .header-button a .btn-base-color {
     color: #ffffff !important;
+  }
+}
+
+/* Consultoria de Negócios Page Styles */
+.consultoria-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 250px 0 100px 0;
+}
+
+.consultoria-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.consultoria-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.consultoria-hero-title {
+  color: #eecb00;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.consultoria-hero-subtitle {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.consultoria-content {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.consultoria-image-wrapper {
+  padding: 20px;
+}
+
+.consultoria-image-border {
+  border: 3px solid #0088cc;
+  padding: 0;
+  overflow: hidden;
+}
+
+.consultoria-image-border img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.consultoria-content-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.consultoria-check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.consultoria-check-icon i {
+  color: #eecb00;
+  font-size: 33px;
+  background: #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultoria-item {
+  background-color: #ddd;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.consultoria-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.consultoria-cta {
+  background: #eecb00;
+  padding: 40px 0;
+}
+
+.consultoria-cta-button {
+  background: #eecb00;
+  color: #fff;
+  width: 248px;
+  height: 92px;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.consultoria-cta-button:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.consultoria-cta-icon {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultoria-cta-icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.consultoria-cta-text span {
+  color: #000;
+  font-size: 14px;
+}
+
+.consultoria-cta-text strong {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+@media (max-width: 991px) {
+  .consultoria-hero-title {
+    font-size: 36px;
+  }
+  
+  .consultoria-hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .consultoria-content-title {
+    font-size: 24px;
   }
 }
 
